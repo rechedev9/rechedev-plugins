@@ -19,10 +19,12 @@ Desde Claude Code:
 
 ## Actualizar la versión de un plugin
 
-1. Hacer cambios en el repo del plugin (por ejemplo, `rechedev9/superpowers`).
-2. Actualizar el campo `sha` del plugin en `.claude-plugin/marketplace.json` apuntando al nuevo commit.
-3. Commit y push de este repo.
-4. En Claude Code: `/plugin marketplace update rechedev-plugins`.
+Los plugins de este marketplace siguen `ref: "main"` de su repo origen, así que para propagar cambios:
+
+1. Push de los cambios al repo del plugin (por ejemplo, `rechedev9/superpowers`).
+2. En Claude Code: `/plugin update superpowers@rechedev-plugins`.
+
+Sólo hace falta tocar este repo si añades, quitas o renombras plugins.
 
 ## Añadir un plugin nuevo
 
@@ -36,7 +38,7 @@ Edita `.claude-plugin/marketplace.json` y añade una entrada al array `plugins`.
   "source": {
     "source": "url",
     "url": "https://github.com/usuario/repo.git",
-    "sha": "<commit-sha>"
+    "ref": "main"
   },
   "homepage": "https://github.com/usuario/repo"
 }

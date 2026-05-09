@@ -14,7 +14,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/rechedev9/superpowers.git",
-        "sha": "f2cbfbefebbfef77321e4c9abc9e949826bea9d7"
+        "ref": "main"
       },
       "homepage": "https://github.com/rechedev9/superpowers",
       "author": {
