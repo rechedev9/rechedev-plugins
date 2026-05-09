@@ -1,0 +1,26 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "rechedev-plugins",
+  "description": "Marketplace personal de plugins de Claude Code mantenido por rechedev",
+  "owner": {
+    "name": "rechedev",
+    "email": "rechedev@hotmail.com"
+  },
+  "plugins": [
+    {
+      "name": "superpowers",
+      "description": "Fork personal de superpowers: brainstorming, subagent-driven development, code review, systematic debugging y red/green TDD. Incluye skills para autorar y testear nuevas skills.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/rechedev9/superpowers.git",
+        "sha": "f2cbfbefebbfef77321e4c9abc9e949826bea9d7"
+      },
+      "homepage": "https://github.com/rechedev9/superpowers",
+      "author": {
+        "name": "Jesse Vincent (upstream) / rechedev (fork)",
+        "email": "rechedev@hotmail.com"
+      }
+    }
+  ]
+}
